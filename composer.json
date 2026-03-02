@@ -1,0 +1,40 @@
+{
+    "name": "techwave/commerce-vouchers-php",
+    "description": "PHP SDK for the Commerce Partner Vouchers API",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TechWave",
+            "email": "hello@techwave.ly"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-json": "*",
+        "ext-curl": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5 || ^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Commerce\\Vouchers\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Commerce\\Vouchers\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Commerce\\Vouchers\\Laravel\\VouchersServiceProvider"
+            ],
+            "aliases": {
+                "Vouchers": "Commerce\\Vouchers\\Laravel\\VouchersFacade"
+            }
+        }
+    }
+}
