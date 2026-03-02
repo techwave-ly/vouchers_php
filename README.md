@@ -89,7 +89,3 @@ class TopupController extends Controller
     }
 }
 ```
-
-## Testing Protocol
-
-Since everything uses intrinsic cURL, no heavy mock-servers run alongside dependencies. Validated continuously against GitHub Actions CI via **PHPUnit** matrix tests matching (PHP 8.0/8.1/8.2/8.3).
