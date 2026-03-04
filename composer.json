@@ -1,5 +1,5 @@
 {
-    "name": "techwave/commerce-vouchers-php",
+    "name": "techwave/vouchers-php",
     "description": "PHP SDK for the Commerce Partner Vouchers API",
     "type": "library",
     "license": "MIT",
